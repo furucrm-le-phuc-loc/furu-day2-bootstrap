@@ -22,63 +22,28 @@
         <p>With a <b>flexible</b> layout.</p>
     </div>
     
+    <!-- navbar -->
     
-    <nav class="navbar bg-dark navbar-dark navbar-expand">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a href="#" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-                <!-- drop lv1 -->
+    <nav class="navbar bg-dark navbar-dark navbar-expand-lg justify-content-end ">
 
-                <a href="#" class="nav-link dropdown-toggle" id="dro-categories"
-                    data-toggle="dropdown" role="button">Categories</a>
-                <ul aria-labelledby="dro-categories" class="dropdown-menu bg-dark">
-                    <!-- drop lv 2 -->
-                    <li class="dropdown-submenu" > 
-                        <a href="" class="dropdown-toggle dropdown-item text-white" data-toggle="dropdown"
-                         id="drop-mobile" role="button">Mobile</a> 
+        <button class="navbar-toggler justify-content-end" 
+        id="btn-nav" type="button" >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        
+        <div class="collapse navbar-collapse main-nav" id="main-nav">
+        </div>
 
-                        <ul aria-labelledby="drop-mobile" class="dropdown-menu bg-dark">  
-                            <li><a href="" class="dropdown-item text-white">Apple</a></li>
-                            <li><a href="" class="dropdown-item text-white">Samsung</a></li>
-                            <li><a href="" class="dropdown-item text-white">Oppo</a></li>
-                        </ul>
-                    </li>
+        <div class="navbar bg-dark navbar-dark navbar-expand-lg side-nav d-none" id="side-nav">
+            
+            
+        </div>
 
 
-                    <li> <a class="text-white dropdown-item" href="">Tablet</a> </li>
-
-
-                    <li class="dropdown-submenu">
-                        <a href="" class="dropdown-item dropdown-toggle text-white" data-toggle="dropdown" 
-                        id="drop-laptop"> Laptop</a>
-                        <ul class="dropdown-menu bg-dark" aria-labelledby="drop-laptop">
-                            <li class="dropdown-submenu">
-                                <a href="" class="dropdown-item text-white dropdown-toggle" 
-                                data-toggle="dropdown" role="button" id="drop-13-inc">13 inc</a>
-                                <ul class="dropdown-menu bg-dark">
-                                    <li><a href="" class="dropdown-item text-white">Apple</a></li>
-                                    <li><a href="" class="dropdown-item text-white">Samsung</a></li>
-                                    <li><a href="" class="dropdown-item text-white">Asus</a></li>
-                                </ul>
-                            </li>
-
-
-                            <li><a href="" class="dropdown-item text-white">15 inc</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link ">About Us</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Contact Us</a>
-            </li>
-        </ul>
     </nav>
+
+    
     <div class="container-fluid">
         <div class="row justify-content-md-center">
             <div class="col-md-4 side">
@@ -93,6 +58,7 @@
                 <img class="img img-60" src="./res/sonic.jpg" alt="" srcset="">
             </div>
     
+            <!-- corousel  -->
             
             <div class="col-md-8">
                 <h2>TITLE HEADING</h2>
@@ -134,11 +100,15 @@
 
     <!-- Footer -->
     <div class="footer">
-    <h2>Footer</h2>
+        <h2>Footer</h2>
     </div>
 
     
+    <button id="btn-to-top" class="btn btn-secondary btn-to-top-icon" data-toggle="tooltip"> 
+        a </button>
 
+
+        
 </body>
 
 <script>
@@ -146,4 +116,7 @@
         interval: 1000
     });
 </script>
+<script src="./js/main.js"></script>
+<script src="./js/dynamicNav.js"></script>
+<script src="./js/mobileNav.js"></script>
 </html>
