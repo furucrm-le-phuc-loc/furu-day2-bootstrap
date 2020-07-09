@@ -77,6 +77,12 @@
     right: 0px;
 }
 
+@media (min-width: 768px) {
+    #side-nav {
+        display: none;
+    }
+}
+
 @media (max-width: 768px) {
 
     .side {
@@ -94,7 +100,7 @@
         /* transition: ease-out; */
     }
     
-    .dropdown-submenu.active > .dropdown-menu {
+    .dropdown-submenu-active > .dropdown-menu {
         display: block;
         margin-left: 10px;
     }
